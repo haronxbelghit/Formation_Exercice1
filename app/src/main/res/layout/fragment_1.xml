@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frag1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".Fragment1">
+
+    <TextView
+        android:id="@+id/tv_frag_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Remplir vos données personelles"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/et_first_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_first_name"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="160dp"-->
+    <!--        android:layout_marginEnd="175dp"-->
+    <!--        android:text="@string/first_name"-->
+    <!--        android:textColor="#000000"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/border_orange"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_first_name"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border_orange"
+        android:hint="@string/first_name"
+        app:layout_constraintBottom_toTopOf="@+id/et_last_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_frag_title" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_last_name"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="235dp"-->
+    <!--        android:layout_marginEnd="175dp"-->
+    <!--        android:text="@string/last_name"-->
+    <!--        android:textColor="#000000"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/border_orange"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_last_name"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border_orange"
+        android:hint="@string/last_name"
+        app:layout_constraintBottom_toTopOf="@+id/et_city"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_first_name" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_Email"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="310dp"-->
+    <!--        android:layout_marginEnd="175dp"-->
+    <!--        android:text="@string/email"-->
+    <!--        android:textColor="#000000"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/border_orange"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_city"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border_orange"
+        android:hint="City"
+        app:layout_constraintBottom_toTopOf="@+id/et_country"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_last_name" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_country"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border_orange"
+        android:hint="Country"
+        app:layout_constraintBottom_toTopOf="@+id/et_job"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_city" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_job"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border_orange"
+        android:hint="Job"
+        app:layout_constraintBottom_toTopOf="@+id/et_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_country" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_desc"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border_orange"
+        android:hint="Description"
+        app:layout_constraintBottom_toTopOf="@+id/et_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_job" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_phone"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border_orange"
+        android:hint="Phone"
+        app:layout_constraintBottom_toTopOf="@+id/et_tel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_desc" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_tel"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border_orange"
+        android:hint="Tel"
+        app:layout_constraintBottom_toTopOf="@+id/et_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_phone" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_email"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border_orange"
+        android:hint="@string/email"
+        app:layout_constraintBottom_toTopOf="@+id/et_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_tel" />
+
+
+    <ImageButton
+        android:id="@+id/et_photo"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border_orange"
+        android:contentDescription="Profile Picture"
+        app:layout_constraintBottom_toTopOf="@+id/btn_submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_email" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="valider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_photo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
